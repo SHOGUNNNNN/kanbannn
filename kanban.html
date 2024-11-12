@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Kanban.css">
+    <title>Kanban</title>
+</head>
+<body>
+    <main id="kanbanBoard">
+        <div id="inputContainer">
+            <input type="text" id="cardInput" placeholder="Enter your work">
+            <button onclick="addCard()">Add your work</button>
+        </div>
+        <section class="swimlane First">
+            <div class="card">
+                <h3 style="text-align: center;">Haven't start yet</h3>
+            </div>
+        </section>
+        <section class="swimlane Second">
+            <div class="card">
+                <h3 style="text-align: center;">In progress</h3>
+            </div>
+        </section>
+        <section class="swimlane Third">
+            <div class="card">
+                <h3 style="text-align: center;">Done</h3>
+                <button class="btn" id="btn">clear</button>
+            </div>
+        </section>
+    </main>
+    <script src="kanban.js"></script>
+</body>
+</html>
